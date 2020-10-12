@@ -1,0 +1,463 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.block__text {
+    /* height: 200px; */
+    /* width: 300px; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 20%;
+    /* column-gap: 9%; */
+
+    /* grid-row-gap: 30%; */
+    /* grid-row-gap: 200px; */
+
+    /* gap: 20% 50px; */
+
+    margin-bottom: 200px;
+
+    border: 3px solid blue;
+
+    /* background: url("../img/Screenshot_1.png") no-repeat right center; */
+    /* background-size: contain; */
+}
+
+.block__text__item {
+    background-color: red;
+
+    border: 1px solid;
+}
+.block__text__item img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.page:first-child {
+    background-color: #f4f5f7;
+    /* border: 1px solid; */
+    padding-top: 74px;
+    padding-bottom: 191px;
+}
+
+.page:nth-child(2) {
+    padding: 90px 0 131px 0;
+
+    /* border: 1px solid; */
+}
+
+.page:nth-child(3) {
+    background-color: #f4f5f7;
+
+    padding: 90px 0 112px 0;
+
+    /* border: 1px solid; */
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+
+    /* background-color: #7ba1ee; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* margin-top: 74px; */
+
+    /* border: 1px solid; */
+}
+
+.author {
+    color: #95989a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+
+    /* border: 1px solid red; */
+    flex-basis: 115px;
+}
+
+a {
+    /* border: 1px solid; */
+
+    display: flex;
+}
+
+.iconify {
+    color: #95989a;
+    font-size: 24px;
+    font-weight: 400;
+
+    /* border: 1px solid; */
+}
+
+/* ----------------------------------------------- */
+
+.order-book {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 159px;
+    border: 1px solid blueviolet;
+}
+
+.order-book__container {
+    flex-basis: 45.2%;
+    /* flex-basis: 516px; */
+
+    /* border: 8px solid pink; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.order-book__book-picture {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.order-book__book-picture img {
+    max-width: 100%;
+    border: 1px solid;
+}
+
+.order-book__text {
+    margin-bottom: 49px;
+    border: 1px solid red;
+}
+
+.order-book__text h1 {
+    margin: 14px 0 26px 0;
+
+    color: #32325f;
+    font-size: 48px;
+
+    border: 1px solid;
+}
+
+.order-book__text p {
+    color: #32325f;
+    font-size: 20px;
+    line-height: 26px;
+
+    border: 1px solid;
+}
+
+.order-book__text p:nth-of-type(3) {
+    margin: 16px 0;
+}
+
+.order-book__text .price {
+    color: #525f7f;
+    font-size: 48px;
+    line-height: normal;
+
+    border: 1px solid blue;
+}
+
+.order-book__buttons {
+    display: flex;
+    justify-content: space-between;
+    /* width: 500px; */
+    border: 1px solid red;
+}
+
+.button {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+    border-radius: 6px;
+
+    border: none;
+}
+
+.btn-order {
+    /* flex-basis: 214px; */
+    flex-basis: 43.5%;
+
+    /* margin-right: 15px; */
+
+    padding: 20px 30px;
+    background-color: #2dce89;
+}
+
+.btn-passage {
+    /* flex-basis: 250px; */
+    flex-basis: 50.52%;
+
+    padding: 20px 30px;
+    background-color: #5e72e4;
+}
+
+/* ------------------------------------------------------- */
+
+.book-info {
+    /* margin: 90px 0 131px 0; */
+
+    /* border: 5px solid red; */
+}
+
+.book-info__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* border: 2px solid rgb(196, 247, 10); */
+}
+
+.book-info__title * {
+    /* border: 1px solid; */
+}
+
+.book-info__title p {
+    margin-bottom: 13px;
+    color: #32325f;
+    font-size: 20px;
+}
+
+.book-info__title h2 {
+    margin-bottom: 100px;
+    color: #32325f;
+    font-size: 48px;
+}
+
+.book-info__details {
+    display: grid;
+    /* grid-template-rows: 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3.2%;
+    /* border: 2px solid green; */
+}
+
+div[class^="book-info__detail_"] {
+    border: 1px solid blue;
+}
+
+div[class^="book-info__detail_"] img {
+    margin-bottom: 40px;
+}
+
+div[class^="book-info__detail_"] p {
+    color: #525f7f;
+    font-size: 16px;
+}
+/* ------------------------------------------------ */
+
+.buyers {
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.buyers__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid;
+}
+
+.buyers__container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    /* grid-row-gap: 6.6%; */ /*не используй проценты 
+    для отступов между строками*/
+    grid-row-gap: 36px;
+    grid-column-gap: 2.45%;
+
+    border: 3px solid rgb(248, 232, 4);
+}
+
+.buyers__item {
+    text-align: center;
+
+    border: 2px solid blue;
+}
+
+.buyers__item img {
+    display: block;
+    /* width: 100%; */
+    /* height: 100%; */
+    max-width: 100%;
+    /* картинка не будет растягиваться 
+    больше своего исходного размера*/
+    max-height: 100%;
+    /* margin-bottom: -4px; */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .order-book__text p {
+        /* font-size: 1em; */
+    }
+
+    .order-book__text h1 {
+        /* font-size: 2em; */
+    }
+
+    .order-book__text .price {
+        /* font-size: 2em; */
+    }
+
+    .button {
+        /* font-size: 1em; */
+        padding: 10px 15px;
+    }
+
+    .buyers__container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, auto);
+        /* auto - размер по контенту */
+
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .order-book {
+    }
+
+    .order-book__text p {
+        font-size: 1em;
+    }
+
+    .order-book__text h1 {
+        font-size: 2em;
+    }
+
+    .order-book__text .price {
+        font-size: 2em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    /* .book-info__details {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    } */
+
+    .buyers__container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, auto);
+
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .order-book {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .order-book__book-picture,
+    .order-book__container {
+        flex-basis: 100%;
+    }
+
+    .order-book__book-picture {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .order-book__text p {
+        font-size: 1em;
+    }
+
+    .order-book__text h1 {
+        font-size: 2em;
+    }
+
+    .order-book__text .price {
+        font-size: 2em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    .book-info__details {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 40%);
+
+        justify-content: center;
+
+        grid-row-gap: 10px;
+    }
+
+    .buyers__container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        /* это все уже применено из медиа 
+        запроса для экранов меньше 767, так как 480
+        подходит под определение: меньше 767 */
+    }
+
+    .book-info__details {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(1, 70%);
+        justify-content: center;
+        grid-row-gap: 10px;
+    }
+
+    .buyers__container {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 70%);
+
+        justify-content: center;
+    }
+}
+
+.hidden {
+    position: absolute;
+    top: -100px;
+    transition: 1s;
+    /* display: none; */
+}
